@@ -1,0 +1,9 @@
+@tailwind components;
+@layer components {
+  .project__thumb {
+    @apply flex flex-col rounded-lg p-2 hover:cursor-pointer focus:ring-blue-200 focus:ring-2;
+  }
+  .project__title {
+    font-weight: 600;
+  }
+}

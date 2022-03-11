@@ -1,0 +1,16 @@
+@tailwind components;
+@layer components {
+  .iconButton {
+    @apply flex justify-center items-center w-11 h-11 rounded-lg p-2 hover:cursor-pointer focus:ring-blue-200 focus:ring-2;
+  }
+  .folioListItem {
+    @apply mb-10;
+  }
+  .mainHeading {
+    line-height: 104px;
+    font-size: 80px;
+    bottom: 30%;
+    left: 5%;
+    @apply font-bold text-white absolute font-highlight;
+  }
+}
