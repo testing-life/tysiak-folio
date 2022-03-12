@@ -13,4 +13,28 @@
     left: 5%;
     @apply font-bold text-white absolute font-highlight;
   }
+  .mainHeader {
+    background: #000045;
+  }
+  .hero__image {
+    height: 100vh;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .-greyBackdrop {
+    @apply relative;
+  }
+
+  .-greyBackdrop:after {
+    content: '';
+    display: block;
+    left: -100%;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    @apply bg-zinc-200;
+  }
 }

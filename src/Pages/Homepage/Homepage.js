@@ -7,10 +7,10 @@ import data from '../../Const/projects';
 
 const Homepage = () => {
   return (
-    <section className="max-w-7xl m-auto">
-      <header>
+    <section className="m-auto relative">
+      <header className="absolute right-16 top-10 z-10 text-white">
         <nav>
-          <ul>
+          <ul className="flex gap-3">
             <li>
               <a href="#portfolio"> Portfolio</a>
             </li>
@@ -21,19 +21,19 @@ const Homepage = () => {
         </nav>
       </header>
       <div className="scroll-smooth bg-cover">
-        <header className="relative">
+        <header className="mainHeader relative">
           <h1 className="mainHeading">
             <span className="block">Aga Lyszko</span>
             <span className="block">UI Designer</span>
           </h1>
           <figure>
-            <img src={hero} alt="heroimage" />
+            <img className="hero__image" src={hero} alt="heroimage" />
           </figure>
         </header>
-        <section className="px-20 py-24" id="about">
+        <section className="px-20 py-24 max-w-7xl m-auto" id="about">
           <p>Hi, I’m Aga, a UI Designer with a pasion for illustration. </p>
         </section>
-        <section className="bg-zinc-200 px-20 py-14" id="portfolio">
+        <section className="bg-zinc-200 px-20 py-14 m-auto max-w-7xl -greyBackdrop" id="portfolio">
           <h2 className="font-semibold text-6xl mb-20">Web &amp; Mobile Design</h2>
           <ul className="grid grid-cols-2 gap-4 auto-rows-min">
             {console.log('data', data)}
@@ -48,7 +48,7 @@ const Homepage = () => {
               ))}
           </ul>
         </section>
-        <section className="px-20 py-14" id="portfolio">
+        <section className="px-20 py-14 max-w-7xl m-auto" id="portfolio">
           <h2 className="font-semibold text-6xl mb-20">Illustration</h2>
           <ul className="grid grid-cols-2 gap-4 auto-rows-min">
             {data &&
