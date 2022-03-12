@@ -7,15 +7,27 @@ import data from '../../Const/projects';
 
 const Homepage = () => {
   return (
-    <section className="m-auto relative">
+    <section className="m-auto relative overflow-x-hidden">
       <header className="absolute right-16 top-10 z-10 text-white">
         <nav>
           <ul className="flex gap-3">
             <li>
-              <a href="#portfolio"> Portfolio</a>
+              <a className="navLink" href="#portfolio">
+                {' '}
+                Portfolio
+              </a>
             </li>
             <li>
-              <a href="#about"> About</a>
+              <a className="navLink" href="#about">
+                {' '}
+                About
+              </a>
+            </li>
+            <li>
+              <a className="navLink" href="#">
+                {' '}
+                Contact
+              </a>
             </li>
           </ul>
         </nav>

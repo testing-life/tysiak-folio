@@ -20,6 +20,7 @@
     height: 100vh;
     width: auto;
     margin: 0 auto;
+    object-fit: cover;
   }
 
   .-greyBackdrop {
@@ -36,5 +37,9 @@
     z-index: -1;
     position: absolute;
     @apply bg-zinc-200;
+  }
+
+  .navLink {
+    @apply font-semibold uppercase p-3;
   }
 }
